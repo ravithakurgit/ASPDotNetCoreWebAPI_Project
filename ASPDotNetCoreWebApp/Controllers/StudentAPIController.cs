@@ -42,6 +42,8 @@ namespace ASPDotNetCoreWebApp.Controllers
             return Ok(employee);
         }
 
+
+        //update method
         [HttpPut]
         public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
         {
@@ -55,6 +57,7 @@ namespace ASPDotNetCoreWebApp.Controllers
             return Ok(employee);
         }
 
+        //delete method
         [HttpDelete]
         public async Task<ActionResult<Employee>> DeleteEmployee(int id)
         {
