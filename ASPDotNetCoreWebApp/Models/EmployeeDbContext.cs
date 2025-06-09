@@ -38,7 +38,7 @@ namespace ASPDotNetCoreWebApp.Models
 
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Code)
                     .HasMaxLength(50)
